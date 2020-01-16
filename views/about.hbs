@@ -1,0 +1,15 @@
+{{> head }}
+<body>
+    {{> navbar }}
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex aperiam non qui, consectetur debitis iste aspernatur magnam quidem excepturi laudantium suscipit, adipisci tenetur dicta impedit unde delectus amet itaque error!</p>
+
+    <p>
+        Estamos en el año {{getAnio}}<!--Esta variable no se encuentra dentro del render de about, pero si en un helper, asi que se ira a buscar en helper-->
+        <!--Si getanio fuera una helper que recibe parametros se especifican despues de getanio:  {{getAnio p1 p2}}
+    </p>
+    
+    {{> scripts }}
+
+
+</body>
